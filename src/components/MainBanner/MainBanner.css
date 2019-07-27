@@ -1,0 +1,44 @@
+.Banner {
+  height: 24rem;
+  background-size: 103% auto;
+  background-image: url("http://oi68.tinypic.com/2599uys.jpg");
+  background-repeat: no-repeat;
+  padding: 0 0 1rem 5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.SBox {
+  height: 3.2rem;
+  width: 16rem;
+  background-color: #12261f;
+  display: flex;
+  color: #ffffff;
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.07rem;
+  cursor: pointer;
+}
+
+.SignUpBox {
+  padding: 0 0 2rem 2rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.BannerTitle {
+  font-weight: 1000;
+  -webkit-text-stroke: 0.14rem #308c83;
+  color: #308c83;
+  padding: 3.6rem 0 0 2rem;
+  font-size: 2.8rem;
+  letter-spacing: 0.13rem;
+}
+
+.BannerSubtitle {
+  font-weight: 800;
+  padding: 1.3rem 0 1.9rem 2rem;
+  font-size: 1.38rem;
+  color: #12261f;
+  line-height: 2rem;
+}

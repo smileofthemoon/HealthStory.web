@@ -1,0 +1,69 @@
+.AppAd {
+  height: 46rem;
+  background: linear-gradient(
+    to top,
+    #c2f2ed 0%,
+    #c2f2ed 42%,
+    #ffffff 42%,
+    #ffffff 100%
+  );
+  display: flex;
+}
+.AdImage {
+  background-image: url("http://oi67.tinypic.com/11jn6rp.jpg");
+  width: 38%;
+  height: 50rem;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 120% 73%;
+  flex-grow: 6;
+}
+
+.AdText {
+  flex-grow: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 4rem;
+}
+
+.AppDescription {
+  color: #12261f;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
+  letter-spacing: 0.08rem;
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+  padding: 1rem 0;
+}
+
+.AdSubtitle {
+  color: #12261f;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
+  letter-spacing: 0.08rem;
+  font-size: 1.6rem;
+  padding: 1.2rem 0;
+}
+
+.AdMainTitle {
+  color: #69bfb7;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
+  -webkit-text-stroke: 0.09rem #69bfb7;
+  letter-spacing: 0.13rem;
+  font-size: 2.2rem;
+}
+
+.QRcode {
+  width: 6rem;
+}
+
+.AppStore {
+  height: 3.6rem;
+  padding: 0.38rem 0.38rem 0.38rem 0.7rem;
+}
+
+.GooglePlay {
+  height: 4.3rem;
+}
