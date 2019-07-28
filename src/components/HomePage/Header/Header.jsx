@@ -17,18 +17,27 @@ const customStyles = {
 };
 
 const onDashboardLinkClick = () => {
-  history.push('/dashboard');
-}
+  history.push("/dashboard");
+};
 
 const Header = () => {
   const [loginModalIsOpen, setLoginModalIsOpen] = useState(false);
+
   const LoginButtonOnClick = () => {
     setLoginModalIsOpen(true);
   };
+
+  const CloseLoginModal = () => {
+    setLoginModalIsOpen(false);
+  };
+
   return (
     <div className="TopBar">
       <div className="GeneralOptionsBox">
-        <div className="MenuOption" onClick={onDashboardLinkClick}> Lista Badań </div>
+        <div className="MenuOption" onClick={onDashboardLinkClick}>
+          {" "}
+          Lista Badań{" "}
+        </div>
         <div className="MenuOption"> Laboratoria </div>
         <div className="MenuOption"> Kontakt </div>
       </div>
@@ -47,7 +56,11 @@ const Header = () => {
         <div className="MenuProfileOption"> Zarejestruj się </div>
       </div>
 
-      <Modal isOpen={loginModalIsOpen} style={customStyles}>
+      <Modal
+        isOpen={loginModalIsOpen}
+        style={customStyles}
+        onRequestClose={CloseLoginModal}
+      >
         <LoginBox />
       </Modal>
     </div>

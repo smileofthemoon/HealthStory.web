@@ -4,7 +4,7 @@ import "./LoginBox.css";
 const LoginBox = () => {
   return (
     <div className="LoginBox">
-      <div className="ClosingBox">x</div>
+      <div className="ClosingBox">X</div>
       <div className="LoginBoxTitle"> Zaloguj się </div>
       <div className="LoginBoxSubtitle">
         Nie masz jeszcze konta?
@@ -24,7 +24,11 @@ const LoginBox = () => {
             alt="facebook"
             src="http://oi68.tinypic.com/17766r.jpg"
           />
-          <img className="LoginGoogle" src="https://i.imgur.com/Sw7Lq09.png" alt="google"/>
+          <img
+            className="LoginGoogle"
+            src="https://i.imgur.com/Sw7Lq09.png"
+            alt="google"
+          />
         </div>
       </div>
       <button className="LoginButton"> ZALOGUJ </button>
