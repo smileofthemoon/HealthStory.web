@@ -7,8 +7,7 @@ const LoginBox = () => {
       <div className="ClosingBox">x</div>
       <div className="LoginBoxTitle"> Zaloguj się </div>
       <div className="LoginBoxSubtitle">
-        {" "}
-        Nie masz jeszcze konta?{" "}
+        Nie masz jeszcze konta?
         <span className="LoginBoxBoldSubtitle"> Zarejestruj. </span>{" "}
       </div>
 
@@ -22,9 +21,10 @@ const LoginBox = () => {
           <div className="LoginByTitle"> Zaloguj przy pomocy:</div>
           <img
             className="LoginFacebook"
+            alt="facebook"
             src="http://oi68.tinypic.com/17766r.jpg"
           />
-          <img className="LoginGoogle" src="https://i.imgur.com/Sw7Lq09.png" />
+          <img className="LoginGoogle" src="https://i.imgur.com/Sw7Lq09.png" alt="google"/>
         </div>
       </div>
       <button className="LoginButton"> ZALOGUJ </button>

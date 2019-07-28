@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import "./Header.css";
 import Modal from "react-modal";
+
 import { LoginBox } from "../LoginBox/LoginBox";
+import { history } from "../../../helpers/history";
+import "./Header.css";
 
 const customStyles = {
   content: {
@@ -14,6 +16,10 @@ const customStyles = {
   }
 };
 
+const onDashboardLinkClick = () => {
+  history.push('/dashboard');
+}
+
 const Header = () => {
   const [loginModalIsOpen, setLoginModalIsOpen] = useState(false);
   const LoginButtonOnClick = () => {
@@ -22,7 +28,7 @@ const Header = () => {
   return (
     <div className="TopBar">
       <div className="GeneralOptionsBox">
-        <div className="MenuOption"> Lista Badań </div>
+        <div className="MenuOption" onClick={onDashboardLinkClick}> Lista Badań </div>
         <div className="MenuOption"> Laboratoria </div>
         <div className="MenuOption"> Kontakt </div>
       </div>
@@ -36,8 +42,7 @@ const Header = () => {
 
       <div className="ProfileOptionsBox">
         <div className="MenuProfileOption" onClick={LoginButtonOnClick}>
-          {" "}
-          Zaloguj{" "}
+          Zaloguj
         </div>
         <div className="MenuProfileOption"> Zarejestruj się </div>
       </div>
