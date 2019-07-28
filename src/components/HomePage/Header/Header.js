@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
+import Modal from "react-modal";
+import { LoginBox } from "../LoginBox/LoginBox";
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)"
+  }
+};
 
 const Header = () => {
+  const [loginModalIsOpen, setLoginModalIsOpen] = useState(false);
+  const LoginButtonOnClick = () => {
+    setLoginModalIsOpen(true);
+  };
   return (
     <div className="TopBar">
       <div className="GeneralOptionsBox">
@@ -18,9 +35,16 @@ const Header = () => {
       </div>
 
       <div className="ProfileOptionsBox">
-        <div className="MenuProfileOption"> Zaloguj </div>
+        <div className="MenuProfileOption" onClick={LoginButtonOnClick}>
+          {" "}
+          Zaloguj{" "}
+        </div>
         <div className="MenuProfileOption"> Zarejestruj się </div>
       </div>
+
+      <Modal isOpen={loginModalIsOpen} style={customStyles}>
+        <LoginBox />
+      </Modal>
     </div>
   );
 };

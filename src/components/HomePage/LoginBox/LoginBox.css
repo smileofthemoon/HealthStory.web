@@ -1,0 +1,111 @@
+.LoginBox {
+  font-family: "Montserrat", sans-serif;
+}
+
+.LoginBoxTitle {
+  color: #308c83;
+  letter-spacing: 0.07rem;
+  font-weight: 900;
+  -webkit-text-stroke: 0.12rem #308c83;
+  font-size: 2rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.LoginBoxSubtitle {
+  color: #308c83;
+  letter-spacing: 0.07rem;
+  font-weight: 900;
+  font-size: 1.15rem;
+  padding-left: 1rem;
+}
+
+.LoginBoxBoldSubtitle {
+  -webkit-text-stroke: 0.05rem #308c83;
+  cursor: pointer;
+}
+
+.EmailInput {
+  display: flex;
+  border-style: solid;
+  border-color: #69bfb7;
+  border-width: 0.2rem;
+  border-radius: 1.4rem;
+  width: 17rem;
+  height: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #b3d5d1;
+  font-weight: 900;
+  padding-left: 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.07rem;
+  margin-bottom: 0.8rem;
+}
+
+.PasswordInput {
+  display: flex;
+  border-style: solid;
+  border-color: #69bfb7;
+  border-width: 0.2rem;
+  border-radius: 1.4rem;
+  width: 17rem;
+  height: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #b3d5d1;
+  font-weight: 900;
+  padding-left: 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.07rem;
+}
+
+.LoginFacebook {
+  height: 2.8rem;
+  cursor: pointer;
+}
+
+.LoginGoogle {
+  height: 2.8rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.LoginByTitle {
+  color: #308c83;
+  letter-spacing: 0.07rem;
+  font-weight: 900;
+  font-size: 1.15rem;
+  -webkit-text-stroke: 0.03rem #308c83;
+}
+
+.ClosingBox {
+  color: #308c83;
+  font-weight: 900;
+  font-size: 1.8rem;
+  -webkit-text-stroke: 0.17rem #308c83;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2.5%;
+}
+
+.LoginButtonsInputs {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.LoginButton {
+  width: 13rem;
+  height: 2.7rem;
+  border-radius: 2.2rem;
+  background-color: #308c83;
+  color: #ffffff;
+  letter-spacing: 0.07rem;
+  font-weight: 900;
+  font-size: 1rem;
+  -webkit-text-stroke: 0.05rem #ffffff;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+}
+
+.AdditionalLoginOptions {
+  padding-left: 2.5rem;
+}
