@@ -20,6 +20,10 @@ const onDashboardLinkClick = () => {
   history.push("/dashboard");
 };
 
+const onLogoClick = () => {
+  history.push("/");
+};
+
 const Header = () => {
   const [loginModalIsOpen, setLoginModalIsOpen] = useState(false);
 
@@ -43,6 +47,7 @@ const Header = () => {
       </div>
       <div className="LogoBox">
         <img
+          onClick={onLogoClick}
           className="Logo"
           src={window.location.origin + "/logo-01.png"}
           alt="Logo"
