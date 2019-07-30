@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 
 import { LoginBox } from "../LoginBox/LoginBox";
+import { SignUpBox } from "../SignupBox/SignUpBox";
 import { history } from "../../../helpers/history";
 import "./Header.css";
 
@@ -26,6 +27,7 @@ const onLogoClick = () => {
 
 const Header = () => {
   const [loginModalIsOpen, setLoginModalIsOpen] = useState(false);
+  const [signUpModalIsOpen, setSignUpModalIsOpen] = useState(false);
 
   const LoginButtonOnClick = () => {
     setLoginModalIsOpen(true);
@@ -33,6 +35,14 @@ const Header = () => {
 
   const CloseLoginModal = () => {
     setLoginModalIsOpen(false);
+  };
+
+  const SignUpButtonOnClick = () => {
+    setSignUpModalIsOpen(true);
+  };
+
+  const CloseSignUpModal = () => {
+    setSignUpModalIsOpen(false);
   };
 
   return (
@@ -58,7 +68,10 @@ const Header = () => {
         <div className="MenuProfileOption" onClick={LoginButtonOnClick}>
           Zaloguj
         </div>
-        <div className="MenuProfileOption"> Zarejestruj się </div>
+        <div className="MenuProfileOption" onClick={SignUpButtonOnClick}>
+          {" "}
+          Zarejestruj się{" "}
+        </div>
       </div>
 
       <Modal
@@ -68,8 +81,17 @@ const Header = () => {
       >
         <LoginBox />
       </Modal>
+
+      <Modal
+        isOpen={signUpModalIsOpen}
+        style={customStyles}
+        onRequestClose={CloseSignUpModal}
+      >
+        <SignUpBox />
+      </Modal>
     </div>
   );
 };
 
 export { Header };
+Modal.setAppElement("body");

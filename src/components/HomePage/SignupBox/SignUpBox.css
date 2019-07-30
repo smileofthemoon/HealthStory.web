@@ -1,4 +1,4 @@
-.LoginBox {
+.signup-box {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -30,8 +30,8 @@
   border-color: #5aa39c;
   border-width: 0.2rem;
   border-radius: 1.4rem;
-  width: 17rem;
-  height: 2rem;
+  width: 16rem;
+  height: 1.8rem;
   font-family: "Montserrat", sans-serif;
   color: #b3d5d1;
   font-weight: 900;
@@ -47,14 +47,15 @@
   border-color: #5aa39c;
   border-width: 0.2rem;
   border-radius: 1.4rem;
-  width: 17rem;
-  height: 2rem;
+  width: 16rem;
+  height: 1.8rem;
   font-family: "Montserrat", sans-serif;
   color: #b3d5d1;
   font-weight: 900;
   padding-left: 2rem;
   font-size: 0.9rem;
   letter-spacing: 0.07rem;
+  margin-bottom: 1rem;
 }
 
 .LoginFacebook {
@@ -90,18 +91,18 @@
 .LoginButtonsInputs {
   display: flex;
   align-items: center;
-  padding: 1.2rem 1.5rem 2rem 1.5rem;
+  padding: 1.2rem 1.5rem 1.3rem 1.5rem;
 }
 
 .LoginButton {
-  width: 13rem;
-  height: 2.6rem;
+  width: 12rem;
+  height: 2.3rem;
   border-radius: 2.2rem;
   background-color: #308c83;
   color: #ffffff;
   letter-spacing: 0.07rem;
   font-weight: 900;
-  font-size: 1rem;
+  font-size: 0.9rem;
   -webkit-text-stroke: 0.05rem #ffffff;
   font-family: "Montserrat", sans-serif;
   border: none;
@@ -113,7 +114,7 @@
 }
 
 .AdditionalLoginOptions {
-  padding-left: 4.5rem;
+  padding-left: 2.5rem;
 }
 
 .LoginTypeImg {

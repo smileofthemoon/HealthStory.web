@@ -1,23 +1,28 @@
 import React from "react";
-import "./LoginBox.css";
+import "./SignUpBox.css";
 
-const LoginBox = () => {
+const SignUpBox = () => {
   return (
-    <div className="LoginBox">
+    <div className="signup-box">
       <div className="ClosingBox">X</div>
-      <div className="LoginBoxTitle"> Zaloguj się </div>
+      <div className="LoginBoxTitle"> Zarejestruj się </div>
       <div className="LoginBoxSubtitle">
-        Nie masz jeszcze konta?
-        <span className="LoginBoxBoldSubtitle"> Zarejestruj. </span>{" "}
+        Masz już konto?
+        <span className="LoginBoxBoldSubtitle"> Zaloguj </span>{" "}
       </div>
 
       <div className="LoginButtonsInputs">
         <div className="LoginInputs">
-          <input className="EmailInput" type="text" placeholder="e-mail" />
+          <input className="EmailInput" type="text" placeholder="e-mail*" />
           <input
             className="PasswordInput"
             type="password"
-            placeholder="hasło"
+            placeholder="hasło*"
+          />
+          <input
+            className="PasswordInput"
+            type="password"
+            placeholder="powtórz hasło*"
           />
         </div>
 
@@ -40,9 +45,9 @@ const LoginBox = () => {
         </div>
       </div>
       <div className="LoginButtonBox">
-        <button className="LoginButton"> ZALOGUJ </button>
+        <button className="LoginButton"> ZAREJESTRUJ SIĘ </button>
       </div>
     </div>
   );
 };
-export { LoginBox };
+export { SignUpBox };
