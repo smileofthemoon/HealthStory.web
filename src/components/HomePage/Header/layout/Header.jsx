@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
-import { LoginBox } from "../LoginBox/LoginBox";
-import { SignUpBox } from "../SignupBox/SignUpBox";
-import { history } from "../../../helpers/history";
+import { LoginBox } from "../../LoginBox/LoginBox";
+import { SignUpBox } from "../../SignupBox/SignUpBox";
+import { history } from "../../../../helpers/history";
+
 import "./Header.css";
 
 const customStyles = {
@@ -25,16 +26,15 @@ const onLogoClick = () => {
   history.push("/");
 };
 
-const Header = () => {
-  const [loginModalIsOpen, setLoginModalIsOpen] = useState(false);
+const HeaderLayout = (props) => {
   const [signUpModalIsOpen, setSignUpModalIsOpen] = useState(false);
 
   const LoginButtonOnClick = () => {
-    setLoginModalIsOpen(true);
+    props.openLoginModal();
   };
 
   const CloseLoginModal = () => {
-    setLoginModalIsOpen(false);
+    // setLoginModalIsOpen(false);
   };
 
   const SignUpButtonOnClick = () => {
@@ -75,7 +75,7 @@ const Header = () => {
       </div>
 
       <Modal
-        isOpen={loginModalIsOpen}
+        isOpen={props.loginModalState.loginModalIsOpen}
         style={customStyles}
         onRequestClose={CloseLoginModal}
       >
@@ -93,5 +93,6 @@ const Header = () => {
   );
 };
 
-export { Header };
 Modal.setAppElement("body");
+
+export { HeaderLayout }
