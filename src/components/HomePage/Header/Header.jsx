@@ -48,12 +48,12 @@ const Header = () => {
   return (
     <div className="TopBar">
       <div className="GeneralOptionsBox">
-        <div className="MenuOption" onClick={onDashboardLinkClick}>
+        {/* <div className="MenuOption" onClick={onDashboardLinkClick}>
           {" "}
           Lista Badań{" "}
         </div>
         <div className="MenuOption"> Laboratoria </div>
-        <div className="MenuOption"> Kontakt </div>
+        <div className="MenuOption"> Kontakt </div> */}
       </div>
       <div className="LogoBox">
         <img
