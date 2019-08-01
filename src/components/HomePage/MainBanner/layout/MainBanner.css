@@ -42,3 +42,24 @@
   color: #12261f;
   line-height: 2rem;
 }
+
+@media (max-width: 800px) {
+  .BannerTitle {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .Banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .BannerSubtitle {
+    padding: 1.3rem 0 1.9rem 0rem;
+    font-size: 1.1rem;
+  }
+  .SignUpBox {
+    padding: 0;
+  }
+}
