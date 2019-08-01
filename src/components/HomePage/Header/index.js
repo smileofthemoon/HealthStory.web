@@ -1,8 +1,6 @@
 import { connect } from "react-redux";
-import {
-  openLoginModal,
-  closeLoginModal
-} from "../../../store/login-modal/actions";
+import { openLoginModal, closeLoginModal } from "../../../store/login-modal/actions";
+import { openSignUpModal } from "../../../store/sign-up-modal/actions";
 import { HeaderLayout } from "./layout/Header";
 
 const mapStateToProps = state => {
@@ -10,7 +8,12 @@ const mapStateToProps = state => {
     loginModalState: state.loginModalState
   };
 };
-const mapDispatchToProps = { openLoginModal, closeLoginModal };
+
+const mapDispatchToProps = {
+  openLoginModal,
+  closeLoginModal,
+  openSignUpModal
+};
 
 export default connect(
   mapStateToProps,
