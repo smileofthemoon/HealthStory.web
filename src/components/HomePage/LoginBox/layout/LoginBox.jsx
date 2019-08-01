@@ -1,10 +1,16 @@
 import React from "react";
 import "./LoginBox.css";
 
-const LoginBox = () => {
+const LoginBoxLayout = props => {
+  const CloseLoginModal = () => {
+    props.closeLoginModal();
+  };
+
   return (
     <div className="LoginBox">
-      <div className="ClosingBox">X</div>
+      <div className="ClosingBox" onClick={CloseLoginModal}>
+        X
+      </div>
       <div className="LoginBoxTitle"> Zaloguj się </div>
       <div className="LoginBoxSubtitle">
         Nie masz jeszcze konta?
@@ -45,4 +51,4 @@ const LoginBox = () => {
     </div>
   );
 };
-export { LoginBox };
+export { LoginBoxLayout };

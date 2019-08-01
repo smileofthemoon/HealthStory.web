@@ -85,6 +85,7 @@
   display: flex;
   justify-content: flex-end;
   padding-right: 2.5%;
+  cursor: pointer;
 }
 
 .LoginButtonsInputs {

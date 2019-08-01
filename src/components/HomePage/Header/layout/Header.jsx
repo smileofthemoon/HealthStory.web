@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
-import { LoginBox } from "../../LoginBox/LoginBox";
+import LoginBox from "../../LoginBox/index";
 import { SignUpBox } from "../../SignupBox/SignUpBox";
 import { history } from "../../../../helpers/history";
 
@@ -26,7 +26,7 @@ const onLogoClick = () => {
   history.push("/");
 };
 
-const HeaderLayout = (props) => {
+const HeaderLayout = props => {
   const [signUpModalIsOpen, setSignUpModalIsOpen] = useState(false);
 
   const LoginButtonOnClick = () => {
@@ -34,7 +34,7 @@ const HeaderLayout = (props) => {
   };
 
   const CloseLoginModal = () => {
-    // setLoginModalIsOpen(false);
+    props.closeLoginModal();
   };
 
   const SignUpButtonOnClick = () => {
@@ -95,4 +95,4 @@ const HeaderLayout = (props) => {
 
 Modal.setAppElement("body");
 
-export { HeaderLayout }
+export { HeaderLayout };

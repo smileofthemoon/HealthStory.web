@@ -1,7 +1,13 @@
 const openLoginModal = () => {
   return {
-    type: 'OPEN_LOGIN_MODAL'
-  }
-}
+    type: "OPEN_LOGIN_MODAL"
+  };
+};
 
-export { openLoginModal };
+const closeLoginModal = () => {
+  return {
+    type: "CLOSE_LOGIN_MODAL"
+  };
+};
+
+export { openLoginModal, closeLoginModal };
