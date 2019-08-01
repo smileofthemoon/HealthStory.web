@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 import HomePage from "./components/HomePage/layout/HomePage";
 import DashboardPage from "./components/DashboardPage/layout/DashboardPage";
 import { history } from "./helpers/history";
-import Header from "./components/HomePage/Header/index";
+import Header from "./components/Header/index";
 import { store } from "./store/store";
 
 import "./App.css";

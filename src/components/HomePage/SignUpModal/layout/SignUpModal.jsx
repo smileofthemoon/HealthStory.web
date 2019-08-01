@@ -14,7 +14,7 @@ const customStyles = {
   }
 };
 
-const SignUpModalLayout = (props) => {
+const SignUpModalLayout = props => {
   return (
     <Modal
       isOpen={props.signUpModalState.signUpModalIsOpen}
@@ -22,11 +22,13 @@ const SignUpModalLayout = (props) => {
       onRequestClose={props.closeSignUpModal}
     >
       <div className="signup-box">
-        <div className="ClosingBox">X</div>
+        <div className="ClosingBox" onClick={props.closeSignUpModal}>
+          X
+        </div>
         <div className="LoginBoxTitle"> Zarejestruj się </div>
         <div className="LoginBoxSubtitle">
           Masz już konto?
-        <span className="LoginBoxBoldSubtitle"> Zaloguj </span>{" "}
+          <span className="LoginBoxBoldSubtitle"> Zaloguj </span>{" "}
         </div>
 
         <div className="LoginButtonsInputs">

@@ -1,9 +1,9 @@
 import React from "react";
 import Modal from "react-modal";
 
-import LoginBox from "../../LoginBox/index";
-import SignUpModal from "../../SignUpModal/index";
-import { history } from "../../../../helpers/history";
+import LoginBox from "../../HomePage/LoginBox/index";
+import SignUpModal from "../../HomePage/SignUpModal/index";
+import { history } from "../../../helpers/history";
 
 import "./Header.css";
 
@@ -27,7 +27,6 @@ const onLogoClick = () => {
 };
 
 const HeaderLayout = props => {
-
   const LoginButtonOnClick = () => {
     props.openLoginModal();
   };

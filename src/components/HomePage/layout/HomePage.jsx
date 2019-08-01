@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.css";
 import { UserBar } from "../UserBar/UserBar";
-import { MainBanner } from "../MainBanner/MainBanner";
+import MainBanner from "../MainBanner/index";
 import { FeaturesPanel } from "../FeaturesPanel/FeaturesPanel";
 import { AppAdvert } from "../AppAdvert/AppAdvert";
 import { FooterSection } from "../FooterSection/FooterSection";

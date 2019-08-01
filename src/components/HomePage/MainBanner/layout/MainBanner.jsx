@@ -1,7 +1,7 @@
 import React from "react";
 import "./MainBanner.css";
 
-const MainBanner = () => {
+const MainBannerLayout = props => {
   return (
     <div className="Banner">
       <div className="BannerTitle">
@@ -11,10 +11,13 @@ const MainBanner = () => {
         Wprowadź swoje wyniki, <br /> a my przygotujemy dla Ciebie statystyki.
       </div>
       <div className="SignUpBox">
-        <div className="SBox"> ZAREJESTRUJ SIĘ > </div>
+        <div className="SBox" onClick={props.openSignUpModal}>
+          {" "}
+          ZAREJESTRUJ SIĘ >{" "}
+        </div>
       </div>
     </div>
   );
 };
 
-export { MainBanner };
+export { MainBannerLayout };
