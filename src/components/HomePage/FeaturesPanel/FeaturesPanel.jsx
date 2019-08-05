@@ -14,8 +14,7 @@ const FeaturesPanel = () => {
       <div className="Blank" />
       <div className="PanelText">
         {" "}
-        POZNAJ PLUSY <span className="BluePanelText"> &nbsp;HEALTH.STORY </span>
-        !{" "}
+        POZNAJ PLUSY <span className="BluePanelText"> &nbsp;HEALTH.STORY</span>
       </div>
       <div className="PanelElements">
         <div className="FeatureElement">

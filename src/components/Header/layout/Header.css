@@ -4,10 +4,9 @@
   background-color: #edefee;
   display: flex;
   align-items: center;
-  background-image: url("https://i.ibb.co/2FQVn2R/Tech-Background.png");
-  background-size: 111% auto;
-  background-position: 12% 33%;
-  /* position: fixed; */
+  background-image: url("/background-1.png");
+  background-size: 120% auto;
+  background-position: 0% 61%;
 }
 
 .Logo {
@@ -83,8 +82,34 @@
   }
 }
 
+.HeaderIcon {
+  font-size: 2.1rem;
+  color: #308c83;
+  display: none;
+  padding: 0 0.7rem;
+  cursor: pointer;
+}
+
+.HeaderIcon:hover {
+  color: #12261f;
+}
+
 @media (max-width: 1100px) {
   .ProfileOptionsBox {
     padding: 0;
+  }
+}
+
+@media (max-width: 570px) {
+  .HeaderIcon {
+    display: block;
+  }
+  .MenuProfileOption {
+    display: none;
+  }
+
+  .Banner {
+    padding: 0;
+    align-items: center;
   }
 }

@@ -1,5 +1,8 @@
 import React from "react";
 import Modal from "react-modal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { faSignInAlt } from "@fortawesome/free-solid-svg-icons";
 
 import LoginBox from "../../HomePage/LoginBox/index";
 import SignUpModal from "../../HomePage/SignUpModal/index";
@@ -66,6 +69,8 @@ const HeaderLayout = props => {
           {" "}
           Zarejestruj się{" "}
         </div>
+        <FontAwesomeIcon className="HeaderIcon" icon={faSignInAlt} />
+        <FontAwesomeIcon className="HeaderIcon" icon={faUserPlus} />
       </div>
 
       <Modal

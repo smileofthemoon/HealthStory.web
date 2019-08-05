@@ -126,3 +126,8 @@
 .LoginInputs {
   margin-top: 0.9rem;
 }
+
+@media (max-width: 570px) {
+  width: 100%;
+  height: 100%;
+}
